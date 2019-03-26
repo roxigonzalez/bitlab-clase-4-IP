@@ -41,7 +41,7 @@ Enlace donde puedes descargarlo según tu SO. https://www.apachefriends.org/es/i
 
 El código de PHP está encerrado entre las etiquetas especiales de comienzo y final `<?php` y `?>` que permiten entrar y salir del "modo PHP".
 
-```
+```php
 <?php
 echo "Hola mundo";
 
@@ -57,7 +57,7 @@ La extensión de archivo predeterminada para los archivos PHP es ".php".
 
 Cualquier cosa fuera de un par de etiquetas de apertura y cierre es ignorado por el intérprete de PHP, lo que permite que los ficheros de PHP tengan contenido mixto. Esto hace que PHP pueda ser embebido en documentos HTML para, por ejemplo, crear plantillas.
 
-```
+```php
 <p>Esto va a ser ignorado por PHP y mostrado por el navegador.</p>
 <?php echo 'Mientras que esto va a ser interpretado.'; ?>
 <p>Esto también será ignorado por PHP y mostrado por el navegador.</p>
@@ -66,7 +66,7 @@ Cualquier cosa fuera de un par de etiquetas de apertura y cierre es ignorado por
 Las declaraciones o sentencias de PHP terminan con un punto y coma (;).
 
 
-## Tipos de variables
+## Tipos de variable
 
 PHP cuenta con muchos tipos de datos, sin embargo, en este momento nos vamos a enfocar en los más importantes y utilizados que son boolean, integer, float, string, array y NULL.
 
@@ -215,7 +215,7 @@ echo "<p>Variable x outside function is: $x</p>";
 ```
 
 Ejemplo usando la variable GLOBAL
-```
+```php
 <?php
 $x = 5;
 $y = 10;
@@ -238,7 +238,7 @@ Una variable estática existe sólo en el ámbito local de la función, pero no 
 
 Ejemplo:
 
-```
+```php
 <?php
 function test()
 {
@@ -262,7 +262,7 @@ Para imprimir en la pantalla usamos echo() puede usarse con o sin paréntesis y 
 
 Ejemplo:
 
-```
+```php
  <?php
 echo "<h2>PHP is Fun!</h2>";
 echo "Hello world!<br>";
